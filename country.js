@@ -25,24 +25,20 @@ function SwitchCountry() {
     if (input === "USA") {
         //set country to usa 
         country = usa;
-        DisplayColors(country);
     }
     else if (input === "Mexico") {
         country = mexico;
-        DisplayColors(country);
     }
     else if (input === "Algeria") {
         country = algeria;
-        DisplayColors(country);
     }
     else if (input === "Norway") {
         country = norway;
-        DisplayColors(country);
     }
     else if (input === "France") {
         country = france;
-        DisplayColors(country);
     }
+    DisplayColors(country);
 } 
 
 function DisplayColors(country) {
@@ -51,9 +47,9 @@ function DisplayColors(country) {
     document.getElementById("OfficialLanguage").innerHTML = country.lang;
     document.getElementById("HelloWorld").innerHTML = country.greeting;
    
-    let color1 = document.getElementById("Color1").style.backgroundColor = country.colors[0];
-    let color2 = document.getElementById("Color2").style.backgroundColor = country.colors[1];
-    let color3 = document.getElementById("Color3").style.backgroundColor = country.colors[2];
+    document.getElementById("Color1").style.backgroundColor = country.colors[0];
+    document.getElementById("Color2").style.backgroundColor = country.colors[1];
+    document.getElementById("Color3").style.backgroundColor = country.colors[2];
 
 }
 
